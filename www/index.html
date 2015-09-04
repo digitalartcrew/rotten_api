@@ -2,7 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+<link rel="apple-touch-icon" href="img/el_nino_icon.jpg" />
+    <!-- <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width"> -->
     <title></title>
 
     <link href="lib/ionic/css/ionic.css" rel="stylesheet">
@@ -12,6 +15,13 @@
     <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
     <link href="css/ionic.app.css" rel="stylesheet">
     -->
+    <script>
+$.mobile.toolbar.prototype.options;
+if (navigator.userAgent.indexOf("Android") != -1) { 
+$.mobile.defaultPageTransition = 'none'; $.mobile.defaultDialogTransition = 'none'; 
+}
+ else {$.mobile.defaultPageTransition = 'slide';}
+</script>
 
 
   </head>
