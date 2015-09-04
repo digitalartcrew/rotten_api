@@ -1,0 +1,236 @@
+/*html, body{
+  height:100%;
+  width:100%;
+  margin:0;
+  padding:0;
+}*/
+
+.scoreUp {
+  float: left;
+  /*border: 2px solid black;*/
+  height: 70px;
+  width: 70px;
+  padding-top: 20px;
+  color: white;
+  font-size: 20px;
+  background: #3d9bd9;
+}
+
+.timer {
+  float: right;
+  /*border: 2px solid black;*/
+  height: 70px;
+  width: 70px;
+  background: #bf2441;
+  color: white;
+  font-size: 50px;
+  padding-top: 20px;
+}
+
+#concession {
+  margin-top: 10px;
+  /*margin: 5px;*/
+  height: 50px;
+  width: 100%;
+ /* border: 2px solid black;*/
+}
+
+
+
+
+.padding {
+	/*background-color: black;*/
+}
+
+.item-body{
+background-color: #b4ea88;
+}
+
+.container{
+  height:260px;
+  width:100%;
+  overflow:hidden;
+  position:relative;
+}
+
+.snack_loader{
+  height: 50px;
+  width: 100%;
+ /* border: 1px solid black;*/
+}
+
+img{
+  position: absolute;
+  height:300px;
+  width:100%;
+  opacity: .5;
+  animation: shake 1s infinite;
+  -moz-animation: shake 1s infinite;
+  -webkit-animation: shake 1s infinite;
+}
+
+@-moz-keyframes shake{
+  0%{
+    opacity:.5;
+    right:2px;
+    top: 2px;
+  }
+  100%{
+    opacity:.7;
+    right:0px;
+    top: 0px;
+  }
+}
+
+@-webkit-keyframes shake{
+  0%{
+    opacity:.5;
+    right:2px;
+    top: 2px;
+  }
+  100%{
+    opacity:.7;
+    right:0px;
+    top: 0px;
+  }
+}
+
+
+.soda {
+  float: left;
+  margin-top: 1px;
+  /*border: 2px solid black;*/
+  height: 45px;
+  width: 51.5px;
+ /* background: white;*/
+  background-image: url(/img/soda.svg);
+   background-repeat: no-repeat;
+}
+
+.popcorn {
+  float: left;
+  margin-top: 1px;
+  /*border: 2px solid black;*/
+  height: 45px;
+  width: 51.5px;
+ /* background: white;*/
+  background-image: url(/img/popcorn.svg);
+  background-repeat: no-repeat;
+}
+
+.peanuts {
+  float: left;
+  margin-top: 1px;
+ /* border: 2px solid black;*/
+  height: 45px;
+  width: 51.5px;
+  /*background: white;*/
+  background-image: url(/img/peanut.svg);
+   background-repeat: no-repeat;
+}
+
+.hotdog {
+  float: left;
+  margin-top: 1px;
+ /* border: 2px solid black;*/
+  height: 45px;
+  width: 51.5px;
+ /* background: white;*/
+  background-image: url(/img/hot_dog.svg);
+   background-repeat: no-repeat;
+}
+
+.candy {
+  float: left;
+  margin-top: 1px;
+ /* border: 2px solid black;*/
+  height: 45px;
+  width: 51.5px;
+  /*background: white;*/
+  background-image: url(/img/candy.svg);
+   background-repeat: no-repeat;
+}
+
+
+
+
+
+/*scrolling reel and flicker background*/
+ul{
+  display:block;
+  padding:0;
+  margin:0;
+}
+
+ul>li{
+  display:block;
+  color:#000;
+  width:25px;
+  height:25px;
+  border: 5px solid #6d6262;
+}
+
+#enter{
+  color: white;
+}
+
+.right{
+  display:block;
+  margin:auto;
+  right:0px;
+  position:absolute;
+}
+
+.title{
+  background-color:  #fdc653;
+  color: white;
+}
+
+.left{
+  display:block;
+  margin:auto;
+  left:0;
+  position:absolute;
+}
+
+.middle{
+  height:360px;
+  background-color:#999;
+  position:absolute;
+  left:25px;
+  right:25px;
+  animation: flicker .1s infinite;
+  -webkit-animation:flicker .1s infinite;
+  -moz-animation:flicker .1s infinite;
+}
+
+li{
+  position:relative;
+  animation: scroll 6s linear infinite;
+  -webkit-animation: scroll 6s linear infinite;
+  -moz-animation:    scroll 6s linear infinite;
+}
+
+@keyframes flicker
+{
+  0% {background-color: #999;} 
+  100% {background-color: #fff;}
+}
+
+@-webkit-keyframes flicker /* Safari and Chrome */
+{
+  0% {background-color: #999;} 
+  100% {background-color: #fff;}
+}
+
+@keyframes scroll
+{
+  0% { top: 0; }
+  100% { top: -400px; }
+}
+
+@-webkit-keyframes scroll /* Safari and Chrome */
+{
+  0% { top: 0; }
+  100% { top: -400px; }
+}
